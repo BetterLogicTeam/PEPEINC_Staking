@@ -1,0 +1,16 @@
+body{
+  background-color: #282828 !important;
+}
+
+*::-webkit-scrollbar {
+  width: 10px !important; /* Adjust the width as needed */
+}
+
+*::-webkit-scrollbar-track {
+  background-color: rgb(50,50,50) !important; /* Set the background color of the track */
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #ADE900 !important; /* Set the color of the scrollbar thumb */
+  border-radius: 12px;
+}

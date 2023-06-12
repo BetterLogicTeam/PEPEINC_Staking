@@ -1,0 +1,218 @@
+.ComingSoon_box_btn {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.Stake_box {
+    padding: 30px;
+    background: #262223;
+    border-radius: 47.007px;
+    width: 50%;
+    /* height: 55vh; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+  }
+
+.active {
+  border: 0.796729px solid #ade900;
+  border-radius: 22.7068px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  background: transparent;
+  padding: 5px 30px;
+  line-height: 26px;
+  color: #ade900;
+}
+
+.non_active {
+  border: 0.796729px solid white;
+  border-radius: 22.7068px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  background: transparent;
+  padding: 5px 30px;
+  line-height: 26px;
+  color: white;
+}
+
+/* .Stake_input{
+    margin: 20px 0;
+    background: #464645;
+border-radius: 12.7477px;
+border: none;
+} */
+
+form {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 20px 0;
+  border-radius: 12.7477px !important;
+  border: none;
+  padding: 1px;
+}
+
+.Stake_input {
+  flex-grow: 2;
+  border: none;
+  background: #464645;
+  border-radius: 12.7477px;
+  padding: 10px 0;
+  position: relative;
+  text-align: center;
+  font-weight: 700;
+  font-size: 17px;
+  color: #acabab;
+}
+
+.Stake_input:focus {
+  outline: none;
+}
+
+form:focus-within {
+  outline: none;
+}
+
+.input_bttn {
+  border: none;
+  background: #ade900;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 22px;
+  color: #000000;
+  border-radius: 12.7477px;
+  position: absolute;
+  margin-top: 6px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.stake_cnnct_main {
+  display: flex;
+  justify-content: center;
+}
+
+.stake_cnnct {
+  background: #ade900;
+  border-radius: 29.1092px;
+  border: none;
+  width: 37%;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 32px;
+
+  color: #000000;
+}
+
+.coming_hr_main {
+  display: flex;
+  justify-content: center;
+}
+
+.stake_spn_main {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.stake_spn {
+  display: flex;
+  flex-direction: column;
+}
+
+.mini_txt {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 19px;
+  color: #ffffff;
+}
+
+.green_txt {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 26px;
+  color: #ade900;
+}
+
+.wht_txt {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 26px;
+  color: white;
+}
+
+@media (min-width: 951px) and (max-width: 1100px) {
+
+    .Stake_box{
+        width: 60%;
+    }
+}
+
+
+@media (min-width: 551px) and (max-width: 950px) {
+    .non_active,.active{
+        padding: 5px 15px;
+    }
+
+    .Stake_box{
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .Stake_box{
+        width: 100%;
+    }
+
+    .non_active,.active{
+        padding: 3px 11px;
+        font-size: 12px;
+    }
+
+    .Stake_input{
+        font-size: 10px;
+    }
+
+    .input_bttn {
+        border: none;
+        background: #ade900;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 11px;
+        line-height: 22px;
+        color: #000000;
+        border-radius: 12.7477px;
+        position: absolute;
+        margin-top: 3px;
+        height: 28px;
+        margin-right: 5px;
+    }
+
+    .stake_cnnct{
+        width: 75%;
+    }
+
+    .mini_txt {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+    }
+
+    .green_txt, .wht_txt{
+        font-weight: 600;
+        font-size: 15px;
+    }
+}
