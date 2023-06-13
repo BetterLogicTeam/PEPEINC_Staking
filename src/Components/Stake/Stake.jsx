@@ -22,7 +22,7 @@ function Stake() {
       >
         <div className="ComingSoon_main">
           <h1 className="fw-bolder text-white">Stake $PEPEINC</h1>
-          <p className="fs-5 text-white">Stake your tokens and earn 20% APR</p>
+          <p className="fs-5 pb-4 text-white">Stake your tokens and earn 20% APR</p>
           <div className="Stake_box">
             <div className="ComingSoon_box_btn">
               <button

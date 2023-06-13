@@ -33,8 +33,9 @@ function ResponsiveDrawer(props) {
   };
 
   const drawer = (
-    <div>
-      <Toolbar style={{background: "#242423"}}/>
+    <div style={{background: "#242423"}}
+    >
+      {/* <Toolbar style={{background: "#242423"}}/> */}
       <Divider style={{display: "none"}}/>
 
       <Box style={{background: "#242423"}}>
@@ -42,9 +43,9 @@ function ResponsiveDrawer(props) {
           <img src={Capture} width={175} alt="" />
         </div>
       </Box>
-      <Box sx={{ width: "100%", maxWidth: 360, bgcolor: "242423" }}>
-        <nav aria-label="main mailbox folders">
-          <List style={{background: "#242423"}}>
+      <Box sx={{ width: "100%", maxWidth: 360, bgcolor: "#242423" }}>
+        <nav aria-label="main mailbox folders" >
+          <List style={{background: "#242423",paddingBottom: "60px"}}>
 
             <Link className="lenk" to="/Stake">
             <ListItem disablePadding>
@@ -170,8 +171,8 @@ function ResponsiveDrawer(props) {
         //   width: { sm: `calc(100% - ${drawerWidth}px)` },
         //   ml: { sm: `${drawerWidth}px` },
         // }}
-        style={{background: "#282828", boxShadow: "none", display: "flex"}}
-        sx={{ alignItems: { xs: "center",sm: "flex-end", md: "flex-end", lg: "flex-end" },justifyContent: { xs: "center",sm: "flex-end", md: "flex-end", lg: "flex-end" }, }}
+        style={{background: "#282828", boxShadow: "none", display: "flex",justifyContent: "space-between", alignItems: "end"}}
+        // sx={{ alignItems: { xs: "flex-end",sm: "flex-end", md: "flex-end", lg: "flex-end" },justifyContent: { xs: "flex-end",sm: "flex-end", md: "flex-end", lg: "flex-end" }, }}
       >
         <Toolbar style={{background: "transparent"}}>
           <IconButton
@@ -208,6 +209,7 @@ function ResponsiveDrawer(props) {
       >
         {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
         <Drawer
+          style={{background: "#242423"}}
           container={container}
           variant="temporary"
           
@@ -216,7 +218,6 @@ function ResponsiveDrawer(props) {
           ModalProps={{
             keepMounted: true, // Better open performance on mobile.
           }}
-          style={{background: "#242423"}}
           sx={{
             display: { xs: "block", sm: "none" },
             "& .MuiDrawer-paper": {
@@ -228,6 +229,7 @@ function ResponsiveDrawer(props) {
           {drawer}
         </Drawer>
         <Drawer
+          style={{background: "#242423"}}
           variant="permanent"
           onClose={handleDrawerToggle}
 
@@ -238,7 +240,6 @@ function ResponsiveDrawer(props) {
               width: drawerWidth,
             },
           }}
-          style={{background: "#242423"}}
           open
         >
           {drawer}
