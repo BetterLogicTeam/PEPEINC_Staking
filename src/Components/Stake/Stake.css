@@ -2,6 +2,12 @@
   display: flex;
   justify-content: center;
 }
+.ComingSoon_main h1 {
+  font-family: 'Rajdhani', sans-serif;
+}
+.ComingSoon_main p {
+  font-family: 'Rajdhani', sans-serif;
+}
 
 .Stake_box {
   padding: 30px;
@@ -20,8 +26,7 @@
 .active {
   border: 0.796729px solid #ade900;
   border-radius: 22.7068px;
-  font-family: "Roboto";
-  font-style: normal;
+  font-family: 'Rajdhani', sans-serif;
   font-weight: 700;
   font-size: 16px;
   background: transparent;
@@ -34,8 +39,7 @@
 .non_active {
   border: 0.796729px solid white;
   border-radius: 22.7068px;
-  font-family: "Roboto";
-  font-style: normal;
+  font-family: 'Rajdhani', sans-serif;
   font-weight: 700;
   font-size: 16px;
   background: transparent;
@@ -85,8 +89,7 @@ form:focus-within {
 .input_bttn {
   border: none;
   background: #ade900;
-  font-family: "Roboto";
-  font-style: normal;
+  font-family: 'Rajdhani', sans-serif;
   font-weight: 700;
   font-size: 15px;
   line-height: 22px;
@@ -108,8 +111,7 @@ form:focus-within {
   border-radius: 29.1092px;
   border: none;
   width: 37%;
-  font-family: "Roboto";
-  font-style: normal;
+  font-family: 'Rajdhani', sans-serif;
   font-weight: 700;
   font-size: 21px;
   line-height: 32px;
@@ -134,8 +136,7 @@ form:focus-within {
 }
 
 .mini_txt {
-  font-family: "Roboto";
-  font-style: normal;
+  font-family: 'Rajdhani', sans-serif;
   font-weight: 500;
   font-size: 15px;
   line-height: 19px;
@@ -195,8 +196,7 @@ form:focus-within {
   .input_bttn {
     border: none;
     background: #ade900;
-    font-family: "Roboto";
-    font-style: normal;
+    font-family: 'Rajdhani', sans-serif;
     font-weight: 700;
     font-size: 11px;
     line-height: 22px;
@@ -207,6 +207,8 @@ form:focus-within {
     height: 20px;
 
     margin-right: 5px;
+  font-family: Rajdhani, sans-serif !important;
+
   }
 
   .stake_cnnct {
@@ -214,7 +216,7 @@ form:focus-within {
   }
 
   .mini_txt {
-    font-family: "Roboto";
+    font-family: 'Rajdhani', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;

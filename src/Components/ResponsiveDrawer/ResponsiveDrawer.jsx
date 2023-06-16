@@ -402,7 +402,8 @@ function ResponsiveDrawer(props) {
         <Toolbar style={{ background: "transparent" }} className="toolBar">
           <Box className="sm_nav nav_bg_home nav_left Home_section_lg">
             <Typography className="sm_nav" variant="h6" noWrap component="div">
-              Home
+              <span >Home</span>
+              
             </Typography>
             <Typography className="sm_nav" variant="h6" noWrap component="div">
               <FaTelegramPlane className="fs-3" />
