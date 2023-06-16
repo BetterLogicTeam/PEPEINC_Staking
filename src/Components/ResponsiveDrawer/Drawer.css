@@ -26,10 +26,6 @@
   color: #848484 !important;
 }
 
-.css-10hburv-MuiTypography-root {
-  font-size: 1rem !important;
-  font-weight: 600 !important;
-}
 
 .css-10hburv-MuiTypography-root:hover {
   color: white !important;
@@ -45,7 +41,7 @@
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 25px;
   line-height: 20px;
   color: #848484;
   border-radius: 8.44671px;
@@ -57,7 +53,7 @@
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 25px;
   line-height: 20px;
   color: #848484;
   border-radius: 8.44671px;
@@ -113,12 +109,16 @@ border-radius: 42.1986px;
 
 .sm_nav {
   display: flex;
-  background: #323232;
+  /* background: #323232; */
   border-radius: 42.1986px;
   padding: 7px 15px;
   margin: 10px 10px 0 0;
   font-weight: 600 !important;
   cursor: pointer;
+}
+.nav_bg_home{
+  background: #323232;
+
 }
 
 .connct {
@@ -128,6 +128,7 @@ border-radius: 42.1986px;
   border-radius: 29.1092px;
   padding: 0px 27px;
   cursor: pointer;
+  box-shadow: 0px 0px 42.1517px #ADE900, 0px 0px 24.0867px #ADE900, 0px 0px 14.0506px #ADE900, 0px 0px 7.02529px #ADE900, 0px 0px 2.00723px #ADE900, 0px 0px 1.00361px #ADE900;
 }
 
 /* .css-hyum1k-MuiToolbar-root {
@@ -145,7 +146,7 @@ border-radius: 42.1986px;
   }
 
   .sm_nav {
-    padding: 5px 7px;
+    padding: 5px 0;
     font-size: 13px !important;
   }
 
@@ -157,20 +158,220 @@ border-radius: 42.1986px;
 
 
 @media screen and (max-width: 600px) {
-    .capture_emg{
-        display: flex;
-        justify-content: center;
-      }
+  .capture_emg {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 @media (min-width:321px) and (max-width: 375px) {
-  .sm_nav{
+  .sm_nav {
     margin-left: 30px;
   }
 }
 
 @media (min-width:376px) and (max-width: 425px) {
-  .sm_nav{
+  .sm_nav {
     margin-left: 55px;
+  }
+}
+
+@media screen and (max-width:1100px) {
+  .Home_section_lg{
+    display: none !important;
+  }
+  
+
+  .sm_nav{
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .Menu_btn_and_connect{
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    width: 100% !important;
+  }
+  .toolBar{
+    width: 100% !important;
+  }
+}
+
+@media (min-width:1100px) {
+  .Home_setion_Res{
+    display: none !important;
+  }
+}
+.Active {
+  color: #fff !important;
+}
+
+.Active1 {
+  background-color: #ade900 !important;
+  color: #fff !important;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+
+}
+
+.drawer_text {
+  font-style: normal !important;
+  font-weight: 700 !important;
+  font-size: 1.4rem !important;
+}
+
+.MuiDrawer-paper {
+  box-sizing: border-box;
+  width: 240px;
+  background-color: rgb(36, 36, 35) !important;
+
+}
+
+
+.css-1y334na {
+  display: inline-flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  outline: 0px;
+  margin: 0px;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  appearance: none;
+  text-decoration: none;
+  font-weight: 700;
+  line-height: 1.71429;
+  font-size: 0.875rem;
+  text-transform: capitalize;
+  font-family: "Roboto";
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  box-shadow: rgba(70, 219, 12, 0.24) 0px 8px 16px 0px;
+  color: white;
+  border: 3px solid transparent;
+  background-color: #ade900;
+  border-radius: 20px;
+  font-style: normal;
+  font-weight: 700;
+  padding: 5px 30px;
+}
+
+.css-1etrg7 {
+  user-select: none;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  fill: currentcolor;
+  flex-shrink: 0;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  font-size: 1.5rem;
+  margin-right: 8px;
+}
+
+.css-1qhlbm {
+  margin: 0px;
+  /* font-weight: 500; */
+  /* line-height: 1.5; */
+  font-size: 1rem;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+}
+
+.css-w0pj6f {
+  overflow: hidden;
+  pointer-events: none;
+  position: absolute;
+  z-index: 0;
+  inset: 0px;
+  border-radius: inherit;
+}
+
+.nav_left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.capture_emg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.capture_emg_box_btn button {
+  margin-top: 5px;
+  background: #ADE900;
+  box-shadow: 0px 0px 11.1517px #c8eb60, 0px 0px 0.0867px #caec63, 0px 0px 7.0506px #ADE900, 0px 0px 5.02529px #ADE900, 0px 0px 2.00723px #ADE900, 0px 0px 1.00361px #ADE900;
+  border-radius: 17.5px;
+  border: none;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 5px 10px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+
+
+.capture_emg_box {
+  background-color: #ADE900;
+  width: 20%;
+  padding: 10px;
+  background: #ADE900;
+  box-shadow: 0px 0px 0px #6EC345, 0px 0px 0px #6EC345, 0px 0px 0px #6EC345, 0px 0px 0px #6EC345, 0px 0px 0px #6EC345, 0px 0px 0px #6EC345;
+  border-radius: 16px;
+}
+
+.pep_geen {
+  color: #ADE900;
+  font-family: 'Comic Sans MS';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19px !important;
+  line-height: 32px;
+}
+
+.pep_white {
+  color: white;
+  font-family: 'Comic Sans MS';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18.1598px;
+  line-height: 32px;
+}
+
+.logo_top {
+  position: absolute;
+  width: 18%;
+
+}
+
+.logo_back {
+  position: relative;
+  width: 80%;
+}
+
+.bg_and_logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid red; */
+  width: 5rem;
+
+}
+
+@media screen and (max-width: 600px) {
+  .css-1y334na{
+    padding: 0 23px;
   }
 }

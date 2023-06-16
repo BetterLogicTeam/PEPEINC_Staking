@@ -1,19 +1,21 @@
 .ComingSoon_box_btn {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 .Stake_box {
-    padding: 30px;
-    background: #262223;
-    border-radius: 47.007px;
-    width: 60%;
-    /* height: 55vh; */
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center;
+  padding: 30px;
+  background: #262223;
+  border-radius: 47.007px;
+  width: 60%;
+  /* height: 55vh; */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
     align-items: center; */
-  }
+  box-shadow: rgba(70, 219, 12, 0.24) 0px 8px 16px 0px;
+
+}
 
 .active {
   border: 0.796729px solid #ade900;
@@ -26,6 +28,7 @@
   padding: 5px 30px;
   line-height: 26px;
   color: #ade900;
+  margin: 0 10px;
 }
 
 .non_active {
@@ -39,6 +42,7 @@
   padding: 5px 30px;
   line-height: 26px;
   color: white;
+  margin: 0 10px;
 }
 
 /* .Stake_input{
@@ -120,7 +124,8 @@ form:focus-within {
 
 .stake_spn_main {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  padding: 0 50px;
 }
 
 .stake_spn {
@@ -131,8 +136,8 @@ form:focus-within {
 .mini_txt {
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 600;
-  font-size: 13px;
+  font-weight: 500;
+  font-size: 15px;
   line-height: 19px;
   color: #ffffff;
 }
@@ -140,7 +145,7 @@ form:focus-within {
 .green_txt {
   font-style: normal;
   font-weight: 700;
-  font-size: 17px;
+  font-size: 19px;
   line-height: 26px;
   color: #ade900;
 }
@@ -154,65 +159,93 @@ form:focus-within {
 
 @media (min-width: 951px) and (max-width: 1100px) {
 
-    .Stake_box{
-        width: 60%;
-    }
+  .Stake_box {
+    width: 60%;
+  }
 }
 
 
 @media (min-width: 551px) and (max-width: 950px) {
-    .non_active,.active{
-        padding: 5px 15px;
-    }
 
-    .Stake_box{
-        width: 85%;
-    }
+  .non_active,
+  .active {
+    padding: 5px 15px;
+  }
+
+  .Stake_box {
+    width: 85%;
+  }
 }
 
 @media screen and (max-width: 550px) {
-    .Stake_box{
-        width: 100%;
-    }
+  .Stake_box {
+    width: 100%;
+  }
 
-    .non_active,.active{
-        padding: 3px 11px;
-        font-size: 12px;
-    }
+  .non_active,
+  .active {
+    padding: 3px 11px;
+    font-size: 12px;
+  }
 
-    .Stake_input{
-        font-size: 10px;
-    }
+  .Stake_input {
+    font-size: 10px;
+  }
 
-    .input_bttn {
-        border: none;
-        background: #ade900;
-        font-family: "Roboto";
-        font-style: normal;
-        font-weight: 700;
-        font-size: 11px;
-        line-height: 22px;
-        color: #000000;
-        border-radius: 12.7477px;
-        position: absolute;
-        margin-top: 3px;
-        height: 28px;
-        margin-right: 5px;
-    }
+  .input_bttn {
+    border: none;
+    background: #ade900;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 22px;
+    color: #000000;
+    border-radius: 12.7477px;
+    position: absolute;
+    width: 3rem !important;
+    height: 20px;
 
-    .stake_cnnct{
-        width: 75%;
-    }
+    margin-right: 5px;
+  }
 
-    .mini_txt {
-        font-family: "Roboto";
-        font-style: normal;
-        font-weight: 500;
-        font-size: 12px;
-    }
+  .stake_cnnct {
+    width: 75%;
+  }
 
-    .green_txt, .wht_txt{
-        font-weight: 600;
-        font-size: 15px;
-    }
+  .mini_txt {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+  }
+
+  .green_txt,
+  .wht_txt {
+    font-weight: 600;
+    font-size: 15px;
+  }
+}
+
+.MAX_btn {
+  padding: 0px 15px !important;
+  margin-top: 0.5rem !important;
+  color: #ffffff !important;
+
+}
+
+@media screen and (max-width: 600px) {
+
+  .MAX_btn p {
+    font-size: 12px !important;
+    
+  }
+
+  #root {
+    padding: 0 !important;
+  }
+
+  .stake_spn_main {
+    padding: 0;
+  }
 }

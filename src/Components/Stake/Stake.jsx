@@ -21,8 +21,10 @@ function Stake() {
         }}
       >
         <div className="ComingSoon_main">
-          <h1 className="fw-bolder text-white">Stake $PEPEINC</h1>
-          <p className="fs-5 pb-4 text-white">Stake your tokens and earn 20% APR</p>
+          <h1 className="fw-bolder text-white pt-5">Stake $PEPEINC</h1>
+          <p className="fs-5 pb-4 text-white">
+            Stake your tokens and earn 20% APR
+          </p>
           <div className="Stake_box">
             <div className="ComingSoon_box_btn">
               <button
@@ -52,10 +54,37 @@ function Stake() {
                       className="Stake_input"
                       placeholder="Enter Tokens Amount"
                     />
-                    <button className="input_bttn">Max</button>
+                    <button
+                      class=" input_bttn MAX_btn"
+                      tabindex="0"
+                      type="button"
+                    >
+                      <p class="MuiTypography-root MuiTypography-body1 css-1qhlbm">
+                        Max
+                      </p>
+                      <span class="MuiTouchRipple-root css-w0pj6f"></span>
+                    </button>
                   </form>
                   <div className="stake_cnnct_main">
-                    <button className="stake_cnnct">Connect</button>
+                    <button
+                      class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium css-1y334na"
+                      tabindex="0"
+                      type="button"
+                    >
+                      <svg
+                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1etrg7"
+                        focusable="false"
+                        aria-hidden="true"
+                        viewBox="0 0 24 24"
+                        data-testid="WalletIcon"
+                      >
+                        <path d="M18 4H6C3.79 4 2 5.79 2 8v8c0 2.21 1.79 4 4 4h12c2.21 0 4-1.79 4-4V8c0-2.21-1.79-4-4-4zm-1.86 9.77c-.24.2-.57.28-.88.2L4.15 11.25C4.45 10.52 5.16 10 6 10h12c.67 0 1.26.34 1.63.84l-3.49 2.93zM6 6h12c1.1 0 2 .9 2 2v.55c-.59-.34-1.27-.55-2-.55H6c-.73 0-1.41.21-2 .55V8c0-1.1.9-2 2-2z"></path>
+                      </svg>
+                      <p class="MuiTypography-root MuiTypography-body1 css-1qhlbm">
+                        Connect
+                      </p>
+                      <span class="MuiTouchRipple-root css-w0pj6f"></span>
+                    </button>
                   </div>
                   <div className="coming_hr_main">
                     <hr className="coming_hr" />
@@ -91,7 +120,25 @@ function Stake() {
               <>
                 <div>
                   <div className="stake_cnnct_main mt-3">
-                    <button className="stake_cnnct">Connect</button>
+                    <button
+                      class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium css-1y334na"
+                      tabindex="0"
+                      type="button"
+                    >
+                      <svg
+                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1etrg7"
+                        focusable="false"
+                        aria-hidden="true"
+                        viewBox="0 0 24 24"
+                        data-testid="WalletIcon"
+                      >
+                        <path d="M18 4H6C3.79 4 2 5.79 2 8v8c0 2.21 1.79 4 4 4h12c2.21 0 4-1.79 4-4V8c0-2.21-1.79-4-4-4zm-1.86 9.77c-.24.2-.57.28-.88.2L4.15 11.25C4.45 10.52 5.16 10 6 10h12c.67 0 1.26.34 1.63.84l-3.49 2.93zM6 6h12c1.1 0 2 .9 2 2v.55c-.59-.34-1.27-.55-2-.55H6c-.73 0-1.41.21-2 .55V8c0-1.1.9-2 2-2z"></path>
+                      </svg>
+                      <p class="MuiTypography-root MuiTypography-body1 css-1qhlbm">
+                        Connect
+                      </p>
+                      <span class="MuiTouchRipple-root css-w0pj6f"></span>
+                    </button>
                   </div>
                   <div className="coming_hr_main">
                     <hr className="coming_hr" />
