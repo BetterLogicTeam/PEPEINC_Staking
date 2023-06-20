@@ -442,7 +442,7 @@ function ResponsiveDrawer(props) {
               onClick={handleDrawerToggle}
               sx={{ mr: 2, display: { lg: "none" } }}
             >
-              <MenuIcon />
+              <MenuIcon className="men_icn"/>
             </IconButton>
 
             <Box className="sm_nav nav_left Home_setion_Res">
