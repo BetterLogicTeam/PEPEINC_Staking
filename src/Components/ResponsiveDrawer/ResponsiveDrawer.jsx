@@ -310,7 +310,8 @@ function ResponsiveDrawer(props) {
             <a
               className="lenk"
               // to="/ComingSoon"
-              href="https://t.me/pepeincubator" target="_blank"
+              href="https://t.me/pepeincubator"
+              target="_blank"
               onClick={() => props.setIsActive("Telegram")}
             >
               <ListItem disablePadding>
@@ -323,7 +324,7 @@ function ResponsiveDrawer(props) {
                           : "draw_box_2"
                       }
                     >
-                     <FaTelegramPlane />
+                      <FaTelegramPlane />
                     </div>
                   </ListItemIcon>
                   <ListItemText
@@ -341,9 +342,13 @@ function ResponsiveDrawer(props) {
                   />
                 </ListItemButton>
               </ListItem>
-              </a>
+            </a>
 
-              <a className="lenk" href="https://twitter.com/pepeincubator" target="_blank">
+            <a
+              className="lenk"
+              href="https://twitter.com/pepeincubator"
+              target="_blank"
+            >
               <ListItem disablePadding>
                 <ListItemButton>
                   <ListItemIcon>
@@ -372,7 +377,13 @@ function ResponsiveDrawer(props) {
                   />
                 </ListItemButton>
               </ListItem>
+            </a>
+
+            <div className="incubat d-flex justify-content-center mt-5">
+              <a className="text-decoration-none" href="https://t.me/xFrozenfrog" target="_blank">
+                <div class="light_green_bttn">Incubate</div>
               </a>
+            </div>
           </List>
         </nav>
       </Box>
@@ -403,14 +414,25 @@ function ResponsiveDrawer(props) {
         <Toolbar style={{ background: "transparent" }} className="toolBar">
           <Box className="sm_nav nav_bg_home nav_left Home_section_lg">
             <Typography className="sm_nav" variant="h6" noWrap component="div">
-              <span >Home</span>
-              
+              <span>Home</span>
             </Typography>
             <Typography className="sm_nav" variant="h6" noWrap component="div">
-             <a href="https://t.me/pepeincubator" className="atag" target="_blank"><FaTelegramPlane className="fs-3" /></a>
+              <a
+                href="https://t.me/pepeincubator"
+                className="atag"
+                target="_blank"
+              >
+                <FaTelegramPlane className="fs-3" />
+              </a>
             </Typography>
             <Typography className="sm_nav" variant="h6" noWrap component="div">
-            <a href="https://twitter.com/pepeincubator" className="atag" target="_blank"><FaTwitter className="fs-3" /></a>
+              <a
+                href="https://twitter.com/pepeincubator"
+                className="atag"
+                target="_blank"
+              >
+                <FaTwitter className="fs-3" />
+              </a>
             </Typography>
 
             <Typography className="sm_nav" variant="h6" noWrap component="div">
@@ -443,7 +465,7 @@ function ResponsiveDrawer(props) {
               onClick={handleDrawerToggle}
               sx={{ mr: 2, display: { lg: "none" } }}
             >
-              <MenuIcon className="men_icn"/>
+              <MenuIcon className="men_icn" />
             </IconButton>
 
             <Box className="sm_nav nav_left Home_setion_Res">

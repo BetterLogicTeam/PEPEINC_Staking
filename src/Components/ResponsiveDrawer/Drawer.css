@@ -106,6 +106,21 @@ border-radius: 42.1986px;
   border-radius: 10px;
 }
 
+.light_green_bttn {
+  /* background: rgba(173, 233, 0, 0.17); */
+  border: 3px solid #ade900;
+  color: #ADE900 !important;
+  border-radius: 33px;
+  padding: 12px 75px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18.9163px;
+  line-height: 28px;
+  color: #ffffff;
+  margin-right: 10px;
+}
+
 .sm_nav {
   display: flex;
   /* background: #323232; */
