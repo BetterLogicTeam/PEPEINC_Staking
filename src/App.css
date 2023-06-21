@@ -43,3 +43,27 @@
 .read-the-docs {
   color: #888;
 }
+
+.Loader_bg img{
+  display: inline-block;
+}
+
+.Loader_bg {
+  position: absolute;
+  background-color: #282828 !important;
+  width: 100%;
+}
+.main_loADER {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  height: 90vh;
+  /* position: absolute; */
+}
+
+@media screen and (max-width: 850px) {
+  .Loader_bg {
+    top: 45%;
+    width: 80%;
+  }
+}

@@ -115,6 +115,11 @@ border-radius: 42.1986px;
   font-weight: 600 !important;
   cursor: pointer;
 }
+
+.atag{
+  text-decoration: none !important;
+  color: white !important;
+}
 .nav_bg_home{
   background: #323232;
 

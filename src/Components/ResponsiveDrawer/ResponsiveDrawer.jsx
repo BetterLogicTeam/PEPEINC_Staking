@@ -307,9 +307,10 @@ function ResponsiveDrawer(props) {
               <hr className="draw_hr" />
             </div>
 
-            <Link
+            <a
               className="lenk"
-              to="/ComingSoon"
+              // to="/ComingSoon"
+              href="https://t.me/pepeincubator" target="_blank"
               onClick={() => props.setIsActive("Telegram")}
             >
               <ListItem disablePadding>
@@ -322,7 +323,7 @@ function ResponsiveDrawer(props) {
                           : "draw_box_2"
                       }
                     >
-                      <FaTelegramPlane />
+                     <FaTelegramPlane />
                     </div>
                   </ListItemIcon>
                   <ListItemText
@@ -340,9 +341,9 @@ function ResponsiveDrawer(props) {
                   />
                 </ListItemButton>
               </ListItem>
-            </Link>
+              </a>
 
-            <Link className="lenk" to="/ComingSoon">
+              <a className="lenk" href="https://twitter.com/pepeincubator" target="_blank">
               <ListItem disablePadding>
                 <ListItemButton>
                   <ListItemIcon>
@@ -371,7 +372,7 @@ function ResponsiveDrawer(props) {
                   />
                 </ListItemButton>
               </ListItem>
-            </Link>
+              </a>
           </List>
         </nav>
       </Box>
@@ -406,10 +407,10 @@ function ResponsiveDrawer(props) {
               
             </Typography>
             <Typography className="sm_nav" variant="h6" noWrap component="div">
-              <FaTelegramPlane className="fs-3" />
+             <a href="https://t.me/pepeincubator" className="atag" target="_blank"><FaTelegramPlane className="fs-3" /></a>
             </Typography>
             <Typography className="sm_nav" variant="h6" noWrap component="div">
-              <FaTwitter className="fs-3" />
+            <a href="https://twitter.com/pepeincubator" className="atag" target="_blank"><FaTwitter className="fs-3" /></a>
             </Typography>
 
             <Typography className="sm_nav" variant="h6" noWrap component="div">
