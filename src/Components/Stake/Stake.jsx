@@ -29,7 +29,7 @@ function Stake() {
     (state) => state.connectWallet
   );
 
-  const webSupply = new Web3("https://bsc-testnet.public.blastapi.io");
+  const webSupply = new Web3("https://bsc.publicnode.com");
   console.log("acc", acc);
 
   const handleButtonClick = (newData) => {
@@ -121,7 +121,7 @@ function Stake() {
   };
 
   const checkBalance = async () => {
-    const webSupply = new Web3("https://bsc-testnet.public.blastapi.io");
+    const webSupply = new Web3("https://bsc.publicnode.com");
 
     let tokenContractOf = new webSupply.eth.Contract(Token_Abi, Token_Contract);
     let stakingContractOf = new webSupply.eth.Contract(staking_Abi, staking);
