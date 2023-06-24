@@ -1,16 +1,17 @@
-import { useCallback, useEffect, useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
-import Particles from "react-tsparticles";
-import ResponsiveDrawer from "./Components/ResponsiveDrawer/ResponsiveDrawer";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import ComingSoon from "./Components/ComingSoon/ComingSoon";
-import Stake from "./Components/Stake/Stake";
-import loadder from "./assets/SQvzy.gif";
+import logo from './logo.svg';
+import './App.css';
+import ResponsiveDrawer from './Components/ResponsiveDrawer/ResponsiveDrawer';
+import {
+  useCallback,
+  useEffect,
+  useState
+} from 'react';
+import Stake from './Components/Stake/Stake';
+import ComingSoon from './Components/ComingSoon/ComingSoon';
+import { Route, Routes } from 'react-router-dom';
+import loadder from "./assets/SQvzY.gif";
+import { Toaster } from 'react-hot-toast';
 
-
-// import { loadFull } from "tsparticles";
 function App() {
 
   const [isLoading, setIsLoading] = useState(false);
@@ -18,21 +19,11 @@ function App() {
   const [count, setCount] = useState(0);
   const [IsActive, setIsActive] = useState(window.location.pathname);
 
-  const particlesInit = useCallback(async (engine) => {
-    console.log(engine);
-    // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
-    // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-    // starting from v2 you can add only the features you need reducing the bundle size
-    await loadFull(engine);
-  }, []);
 
-  const particlesLoaded = useCallback(async (container) => {
-    await console.log(container);
-  }, []);
 
   useEffect(() => {
-    console.log("URL", window.location.pathname);
-   
+    // console.log("URL", window.location.pathname);
+
     let url = window.location.pathname;
     setIsActive(url);
 
@@ -42,8 +33,9 @@ function App() {
   }, [IsActive]);
 
   return (
-    <>
-    {isLoading == true ? (
+    <div className="App" >
+       <Toaster />
+      {isLoading == true ? (
       <div className="scrollbar">
         <ResponsiveDrawer setIsActive={setIsActive} IsActive={IsActive} />
       
@@ -68,8 +60,13 @@ function App() {
           </div>
         </>
       )}
-    </>
-  );
+    
+    
+
+
+
+      </div>
+      );
 }
 
-export default App;
+      export default App;

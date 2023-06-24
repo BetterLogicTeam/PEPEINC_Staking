@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
@@ -23,17 +23,29 @@ import Capture from "../../assets/Capture .png";
 import logo from "../../assets/logo.png";
 import { Link } from "react-router-dom";
 import bg_logo from "../../assets/bg_logo.png";
+import WalletModal from "../wallet_modal/WalletModal";
+import { useSelector } from "react-redux";
 
 const drawerWidth = 330;
 
 function ResponsiveDrawer(props) {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
+  const [modalShow, setModalShow] = useState(false);
+  let { provider, acc, providerType, web3 } = useSelector(
+    (state) => state.connectWallet
+  );
 
   // let url = window.location.pathname
 
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
+  };
+  const showModal = () => {
+    setModalShow(true);
+  };
+  const closeModal = () => {
+    setModalShow(false);
   };
 
   const drawer = (
@@ -395,6 +407,7 @@ function ResponsiveDrawer(props) {
 
   return (
     <Box sx={{ display: "flex" }} style={{ background: "#242423" }}>
+      <WalletModal show={modalShow} onHide={closeModal} />
       <CssBaseline style={{ background: "#242423" }} />
       <AppBar
         position="fixed"
@@ -409,7 +422,7 @@ function ResponsiveDrawer(props) {
           justifyContent: "space-between",
           alignItems: "end",
         }}
-        // sx={{ alignItems: { xs: "flex-end",sm: "flex-end", md: "flex-end", lg: "flex-end" },justifyContent: { xs: "flex-end",sm: "flex-end", md: "flex-end", lg: "flex-end" }, }}
+      // sx={{ alignItems: { xs: "flex-end",sm: "flex-end", md: "flex-end", lg: "flex-end" },justifyContent: { xs: "flex-end",sm: "flex-end", md: "flex-end", lg: "flex-end" }, }}
       >
         <Toolbar style={{ background: "transparent" }} className="toolBar">
           <Box className="sm_nav nav_bg_home nav_left Home_section_lg">
@@ -440,20 +453,28 @@ function ResponsiveDrawer(props) {
                 class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium css-1y334na"
                 tabindex="0"
                 type="button"
+                onClick={() => showModal()}
               >
-                <svg
-                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1etrg7"
-                  focusable="false"
-                  aria-hidden="true"
-                  viewBox="0 0 24 24"
-                  data-testid="WalletIcon"
-                >
-                  <path d="M18 4H6C3.79 4 2 5.79 2 8v8c0 2.21 1.79 4 4 4h12c2.21 0 4-1.79 4-4V8c0-2.21-1.79-4-4-4zm-1.86 9.77c-.24.2-.57.28-.88.2L4.15 11.25C4.45 10.52 5.16 10 6 10h12c.67 0 1.26.34 1.63.84l-3.49 2.93zM6 6h12c1.1 0 2 .9 2 2v.55c-.59-.34-1.27-.55-2-.55H6c-.73 0-1.41.21-2 .55V8c0-1.1.9-2 2-2z"></path>
-                </svg>
-                <p class="MuiTypography-root MuiTypography-body1 css-1qhlbm">
-                  Connect
-                </p>
-                <span class="MuiTouchRipple-root css-w0pj6f"></span>
+                {
+                  acc == null ? <>
+                    <svg
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1etrg7"
+                      focusable="false"
+                      aria-hidden="true"
+                      viewBox="0 0 24 24"
+                      data-testid="WalletIcon"
+                    >
+                      <path d="M18 4H6C3.79 4 2 5.79 2 8v8c0 2.21 1.79 4 4 4h12c2.21 0 4-1.79 4-4V8c0-2.21-1.79-4-4-4zm-1.86 9.77c-.24.2-.57.28-.88.2L4.15 11.25C4.45 10.52 5.16 10 6 10h12c.67 0 1.26.34 1.63.84l-3.49 2.93zM6 6h12c1.1 0 2 .9 2 2v.55c-.59-.34-1.27-.55-2-.55H6c-.73 0-1.41.21-2 .55V8c0-1.1.9-2 2-2z"></path>
+                    </svg>
+                    <p class="MuiTypography-root MuiTypography-body1 css-1qhlbm">
+                      Connect
+                    </p>
+                    <span class="MuiTouchRipple-root css-w0pj6f"></span>
+                  </>
+                    :
+                    "Connected"
+                }
+
               </button>
             </Typography>
           </Box>
